@@ -11,22 +11,36 @@
             font-family: 'Noto Serif JP', serif;
             background-color: #F9F5EF;
             color: #3C3C3C;
-            text-align: center;
         }
-        .hero {
+        header {
+            background-color: #F5C24C;
             padding: 40px 20px;
+            text-align: center;
+            color: white;
         }
         .logo-img {
             width: 300px;
             max-width: 80%;
             margin-bottom: 20px;
         }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .about {
+            background-color: #FFFBE5;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
         .gallery {
+            background-color: #ffffff;
+        }
+        .gallery .products {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
-            padding: 40px 20px;
+            margin-top: 20px;
         }
         .product {
             background: #fff;
@@ -55,30 +69,56 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .shop-button:hover {
+            background-color: #e0a900;
+        }
+        footer {
+            padding: 20px;
+            background-color: #F9F5EF;
+            font-size: 14px;
+            color: #888;
+            text-align: center;
+            border-top: 1px solid #ddd;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="hero">
+    <header>
         <img src="logo.png" alt="Kiiro no Mori Logo" class="logo-img">
         <h2>Japanese-inspired Woodcraft Studio</h2>
         <p>Minimalist. Mindful. Handcrafted in Thailand.</p>
-    </div>
+    </header>
 
-    <div class="gallery">
-        <div class="product">
-            <img src="https://via.placeholder.com/280x180?text=Phone+Stand" alt="Phone Stand">
-            <h3>Phone Stand</h3>
-            <p>Made from reclaimed pine. Custom engravings available.</p>
-            <a href="https://shopee.co.th/" target="_blank" class="shop-button">Shop on Shopee</a>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Kiiro no Mori (黄色の森) creates handcrafted wooden objects from reclaimed pine—designed for peaceful, modern living spaces.</p>
+    </section>
+
+    <section class="gallery">
+        <h2>Our Products</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/280x180?text=Phone+Stand" alt="Phone Stand">
+                <h3>Phone Stand</h3>
+                <p>Made from reclaimed pine. Custom engravings available.</p>
+                <a href="https://shopee.co.th/" target="_blank" class="shop-button">Shop on Shopee</a>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/280x180?text=Pencil+Holder" alt="Pencil Holder">
+                <h3>Pencil Holder</h3>
+                <p>Minimalist design to organize your desk beautifully.</p>
+                <a href="https://shopee.co.th/" target="_blank" class="shop-button">Shop on Shopee</a>
+            </div>
         </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/280x180?text=Pencil+Holder" alt="Pencil Holder">
-            <h3>Pencil Holder</h3>
-            <p>Minimalist design to organize your desk beautifully.</p>
-            <a href="https://shopee.co.th/" target="_blank" class="shop-button">Shop on Shopee</a>
-        </div>
-    </div>
+    </section>
+
+    <footer>
+        © 2025 Kiiro no Mori. Crafted with care in Thailand.  
+        <br>
+        Follow us: IG @kiironomori
+    </footer>
 </body>
 </html>
