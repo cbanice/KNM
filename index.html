@@ -12,16 +12,21 @@
             background-color: #F9F5EF;
             color: #3C3C3C;
         }
-        header {
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             background-color: #F5C24C;
-            padding: 40px 20px;
-            text-align: center;
-            color: white;
+            padding: 10px 20px;
         }
-        .logo-img {
-            width: 300px;
-            max-width: 80%;
-            margin-bottom: 20px;
+        .navbar img {
+            height: 50px;
+        }
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #F5C24C;
+            color: white;
         }
         section {
             padding: 40px 20px;
@@ -86,11 +91,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Kiiro no Mori Logo" class="logo-img">
+    <div class="navbar">
+        <img src="logo.png" alt="Kiiro no Mori Logo">
+    </div>
+
+    <div class="hero">
         <h2>Japanese-inspired Woodcraft Studio</h2>
         <p>Minimalist. Mindful. Handcrafted in Thailand.</p>
-    </header>
+    </div>
 
     <section class="about">
         <h2>About Us</h2>
